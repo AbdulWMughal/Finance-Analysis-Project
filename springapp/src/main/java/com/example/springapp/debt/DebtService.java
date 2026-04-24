@@ -70,7 +70,7 @@ public class DebtService {
 //                return  debtR.findAllByUserOrderByDueDateAsc(user);
                 return debts.stream()
                         .sorted(Comparator.comparing(debt -> parseDueDate(debt.getDueDate())))
-                        .collect(Collecto£.toList());
+                        .collect(Collectors.toList());
             }
             return debtR.findAllByUser(user);
         } catch (Exception e){

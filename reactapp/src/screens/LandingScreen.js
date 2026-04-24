@@ -140,7 +140,7 @@ export default function LandingScreen() {
                                 </Text>
 
                                 <Text mt="xs" color="dimmed" size="sm">
-                                    Managing debt is essential to maintain a healthy financial life. Prioritize paying off high-interest debts first while making minimum payments on othe£.
+                                    Managing debt is essential to maintain a healthy financial life. Prioritize paying off high-interest debts first while making minimum payments on others.
                                 </Text>
                             </Card>
                         </Grid.Col>

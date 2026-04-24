@@ -1,10 +1,10 @@
 package com.example.springapp;
 
 import static org.junit.Assert.assertTrue;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilde£.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandle£.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatche£.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatche£.jsonPath;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 import java.io.File;
 
@@ -31,7 +31,7 @@ class SpringappApplicationTests {
      public void testGetAccountAll() throws Exception {
      	
          mockMvc.perform(get("/accounts"))
-         .andExpect(MockMvcResultMatche£.status().isOk())
+         .andExpect(MockMvcResultMatchers.status().isOk())
          .andDo(print())
          .andExpect(content().contentType("application/json"))
  			.andExpect(jsonPath("$").isArray())
@@ -43,7 +43,7 @@ class SpringappApplicationTests {
      public void testGetAccountById() throws Exception {
      	
          mockMvc.perform(get("/accounts").param("id", "1"))
-         .andExpect(MockMvcResultMatche£.status().isOk())
+         .andExpect(MockMvcResultMatchers.status().isOk())
          .andDo(print())
          .andExpect(content().contentType("application/json"))
  			.andExpect(jsonPath("$").isArray())
@@ -55,7 +55,7 @@ class SpringappApplicationTests {
      public void testGetBudgetAll() throws Exception {
      	
          mockMvc.perform(get("/budget"))
-         .andExpect(MockMvcResultMatche£.status().isOk())
+         .andExpect(MockMvcResultMatchers.status().isOk())
          .andDo(print())
          .andExpect(content().contentType("application/json"))
  			.andExpect(jsonPath("$").isArray())
@@ -67,7 +67,7 @@ class SpringappApplicationTests {
      public void testGetBudgetById() throws Exception {
      	
          mockMvc.perform(get("/budget").param("id", "1"))
-         .andExpect(MockMvcResultMatche£.status().isOk())
+         .andExpect(MockMvcResultMatchers.status().isOk())
          .andDo(print())
          .andExpect(content().contentType("application/json"))
  			.andExpect(jsonPath("$").isArray())
@@ -79,7 +79,7 @@ class SpringappApplicationTests {
      public void testGetGoalAll() throws Exception {
      	
          mockMvc.perform(get("/goals"))
-         .andExpect(MockMvcResultMatche£.status().isOk())
+         .andExpect(MockMvcResultMatchers.status().isOk())
          .andDo(print())
          .andExpect(content().contentType("application/json"))
  			.andExpect(jsonPath("$").isArray())
@@ -91,7 +91,7 @@ class SpringappApplicationTests {
      public void testGetGoalById() throws Exception {
      	
          mockMvc.perform(get("/goals").param("id", "1"))
-         .andExpect(MockMvcResultMatche£.status().isOk())
+         .andExpect(MockMvcResultMatchers.status().isOk())
          .andDo(print())
          .andExpect(content().contentType("application/json"))
  			.andExpect(jsonPath("$").isArray())

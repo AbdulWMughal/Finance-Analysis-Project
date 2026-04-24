@@ -1,4 +1,4 @@
-FinLedger is a centralized platform designed to help individuals manage their finances effectively and work towards achieving their financial goals. It provides users with a comprehensive set of tools and features to track income and expenses, create budgets, analyze spending patterns, set financial goals, manage debt, and generate reports. By offering these functionalities, FinLedger aims to promote financial literacy, responsible money management, and improved financial well-being for its use£.
+FinLedger is a centralized platform designed to help individuals manage their finances effectively and work towards achieving their financial goals. It provides users with a comprehensive set of tools and features to track income and expenses, create budgets, analyze spending patterns, set financial goals, manage debt, and generate reports. By offering these functionalities, FinLedger aims to promote financial literacy, responsible money management, and improved financial well-being for its users.
 
 ## Objectives
 
